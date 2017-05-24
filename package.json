@@ -13,21 +13,34 @@
     "run:before": "build"
   },
   "dependencies": {
-    "ionic-angular": "nightly",
-    "ionic-native": "^2.0.3",
-    "ionicons": "^3.0.0",
-    "localforage": "^1.4.2",
-    "lodash": "^4.16.2",
-    "moment": "^2.15.1",
-    "node-uuid": "^1.4.7"
+    "@angular/common": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/forms": "^4.1.0",
+    "@angular/http": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "ionic-angular": "^3.2.1",
+    "ionic-native": "2.0.3",
+    "ionicons": "3.0.0",
+    "localforage": "1.4.2",
+
+    "moment": "2.15.1",
+    "node-uuid": "1.4.7",
+    "rxjs": "^5.1.1",
+    "sw-toolbox": "^3.6.0",
+    "zone.js": "^0.8.11"
   },
   "devDependencies": {
+    "@angular/compiler": "^4.1.0",
+    "@angular/compiler-cli": "^4.1.0",
+
     "@ionic/app-scripts": "latest",
     "@types/localforage": "0.0.30",
-    "@types/lodash": "^4.14.36",
-    "@types/moment": "^2.13.0",
+
+    "@types/moment": "2.13.0",
     "@types/node-uuid": "0.0.28",
-    "typescript": "^2.0.3"
+    "sw-toolbox": "^3.6.0",
+    "typescript": "^2.2.1"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
@@ -45,5 +58,14 @@
       "locator": "ios"
     }
   ],
+  "config":{
+    "_ionic_print_original_dependency_tree":true,
+    "_ionic_print_modified_dependency_tree":true,
+    "_ionic_parse_deeplinks":true,
+    "ionic_webpack": "./webpack.config-issue954.js",
+    "_ionic_manual_treeshaking": true,
+    "ionic_enable_lint": false,
+    "not_used?_ionic_clean_before_copy": false
+  },
   "description": "b12-starter: An Ionic project"
 }
